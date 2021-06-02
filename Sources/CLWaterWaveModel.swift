@@ -94,7 +94,7 @@ public final class CLWaterWaveModel {
     }
 
     @objc private func wave() {
-        phase += abs(speed)
+        phase += speed
         let path = createWaterWavePath()
         self.delegate?.waterWaveModel(self, didUpdate: path)
     }
@@ -103,7 +103,7 @@ public final class CLWaterWaveModel {
         let path = CLWaterWavePath()
         path.lineWidth = 1
 
-        let waterHeightY = (1 - (abs(depth) > 1.0 ? 1.0 : abs(depth))) * frame.size.height
+        let waterHeightY = (1 - (abs(depth) > 1.0 ? 1.0 : abs(depth))) * frame.size.height + abs(amplitude)
 
         path.move(to: CGPoint(x: 0, y: waterHeightY))
 
