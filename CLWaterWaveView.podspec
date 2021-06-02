@@ -10,7 +10,7 @@ A UIView what able to show water wave effect
   s.homepage         = 'https://github.com/cristi-lupu/CLWaterWaveView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Cristian Lupu' => 'lupucristiancptc@gmail.com' }
-  s.source           = { :git => 'https://github.com/cristiLupu/CLWaterWaveView.git', :tag => '1.2' }
+  s.source           = { :git => 'https://github.com/ammob/CLWaterWaveView.git', :tag => '1.3' }
   s.social_media_url = 'https://twitter.com/LupuCrist'
 
   s.ios.deployment_target = '9.0'
